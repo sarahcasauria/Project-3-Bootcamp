@@ -1,0 +1,64 @@
+<!---Begin HTML--->
+<!doctype html>
+<html lang="en">
+
+<!---Setup Header--->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Activate basic Bootstrap CSS package-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Activate JavaScript.JQuery Library-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    
+    <title>Gaming Sales Insight</title>
+  </head>
+
+<!--Create Body of Landing Page-->
+<Body>
+    <!--Navigation Panel-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Gaming Sales Insight By Gaming Platform</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="visualisation.html">Graphs & Charts<span class="sr-only">(current)</span></a>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Body of Web Page--->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="box">
+                    <h1>Summary</h1>
+                        <hr>
+                        <p>The purpose of this website is to present an analysis to the users of this web site on the games that has been released over the various gaming platforms from 1985 to 2016.
+                        </p>
+                        <p>After assembling and cleansing the dataset, we broke down and analysed the data to show the following:
+                        </p>
+                        <UL TYPE=”square”>
+                            <LI><b>Summary:</b> This inforamtion box will disclose the earliest and latest year of game release and the number of games released for each console.  Using this information, users can gain an understanding at how many games are available for the platform and what vintage the gaming period covers.</LI>
+                            <LI><b>Game Rating Count:</b> This pie chart will show a visualisation of the number of games released under the different maturity rating categories (AO, E, E10+. K-A, M, RP, and T).  This will help users determine what skew of audience's maturity the platform is designed towards.</LI>
+                            <LI><b>Sales By Region:</b> This bar graph shows the total sales of all games per platform per region.  The information here will give an indication of popularity of the games released under each platform accross the different regions (North America, Europe, Japan, Others, and Global).</LI>
+                            <LI><b>Average Critic Rating of Games:</b> This gauge chart shows the average critic ratings of the games released under the platform.  It shows the users the quality of games that has been released under the platform as assessed by professional critics.</LI>
+                            <LI><b>Average User Rating of Games:</b> This gauge chart shows the average user ratings of the games released under the platform.  It shows the users the quality of games that has been released under the platform as assessed by players of the platform.</LI>
+                        </UL>
+                        <p>It is intended that the combination of the abovementioned data will help users determine which platform will be best suited for their needs and wants.</p>
+                        <p>The data on this website is based on the information extracted from <a href="https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv">https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv</a>.</p>
+                </div>
+            </div>
+  
+            
+        </div>
+    </div>
+</Body>
