@@ -10,10 +10,17 @@ h1 {
     font-size: 35px;
 }
 
-h3 {
+h2 {
     font-size: 25px;
 }
 
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
 .text-center {
     text-align: center;
 }
@@ -76,7 +83,7 @@ th {
     color:#0515a9!important;
     font-size: 40px;
     font-weight:bold!important;
-    background-color:#f6f7f8!important;
+    background-color:#ffffff!important;
 }
 
 .navbar-brand:hover {
@@ -88,7 +95,7 @@ th {
 }
 
 .nav-link:hover {
-    background-color:#9fbcfa!important;
+    background-color:#9fccfa!important;
 }
 
 /* Media query to change colour of navbar for small screen */
