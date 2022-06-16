@@ -4,6 +4,8 @@ from flask import render_template
 from bson import json_util
 import pandas
 import json
+from passwordfile import username, password
+
 #Specify string names inside '' for following variables
 MONGODB_HOST = 'mongodb+srv://<username>:<password>@cluster0.tqb6ya2.mongodb.net'
 DBS_NAME = 'myFirstDatabase'
