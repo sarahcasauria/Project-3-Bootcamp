@@ -7,7 +7,7 @@ import json
 from passwordfile import username, password
 
 #Specify string names inside '' for following variables
-MONGODB_HOST = 'mongodb+srv://<username>:<password>@cluster0.tqb6ya2.mongodb.net'
+MONGODB_HOST = f'mongodb+srv://{username}:{password}@cluster0.tqb6ya2.mongodb.net'
 DBS_NAME = 'myFirstDatabase'
 COLLECTION_NAME = 'platform_summary'
 #Specify numerical variable (default used)
@@ -22,10 +22,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/visualisation")
-def visualisation():
+@app.route("/visualisation_data")
+def render_data():
 
-    connection = MongoClient('mongodb+srv://<username>:<password>@cluster0.tqb6ya2.mongodb.net', 27017)
+    connection = MongoClient(MONGODB_HOST, 27017)
     collection = connection[DBS_NAME][COLLECTION_NAME]
     projects = collection.find(projection=FIELDS, limit=100000)
     #projects = collection.find(projection=FIELDS)
@@ -35,6 +35,10 @@ def visualisation():
     json_projects = json.dumps(json_projects, default=json_util.default)
     connection.close()
     return json_projects
+
+@app.route("/visualisation")
+def visualisation():
+    return render_template("visualisation.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
