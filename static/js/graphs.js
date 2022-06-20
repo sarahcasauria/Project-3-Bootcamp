@@ -38,7 +38,7 @@ function buildMetadata(platformID) {
     d3.json(url).then(data => {
     
         // Use the <div> element with "sample-metadata" ID to append the demographic data
-        var metadatasBox = d3.select("#sample-metadata");
+        var metadataBox = d3.select("#sample-metadata");
         // Clear the existing data in the box (if exists)
         metadataBox.html("");
 
