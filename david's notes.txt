@@ -1,0 +1,14 @@
+- exported the data
+-- Kaggle - csv - 
+
+- cleansed the data
+--Full data set had 16720 lines
+--Converted data set to focus on plaform (console) instead of game titles.
+--Transformed Data to Mean - focus was on getting the console sales across NA, EU, JP, Other Sales, Global Sales
+--Transformed Data to Critic Mean score across the platform - User Scores, genre scores, 
+--Summed up all the ratings per Platform.
+
+- transformed it into mongoDB atlas
+-- first we loaded the data into local server and checked that it worked first
+-- then we loaded the data to MongoDB cloud and allowed access for everyone on the team
+
