@@ -23,7 +23,7 @@ function init() {
         console.log(`------------------------`)
         console.log(`firstID variable:`)
         console.log(firstPlatform);
-        buildDemographics(firstPlatform);
+        buildMetadata(firstPlatform);
         buildBar(firstPlatform);
         buildPie(firstPlatform);
         buildGauge(firstPlatform);
@@ -32,15 +32,15 @@ function init() {
 
 init();
 
-function buildDemographics(platformID) {
+function buildMetadata(platformID) {
         
     // Read in JSON data
     d3.json(url).then(data => {
     
         // Use the <div> element with "sample-metadata" ID to append the demographic data
-        var demographicsBox = d3.select("#sample-metadata");
+        var metadatasBox = d3.select("#sample-metadata");
         // Clear the existing data in the box (if exists)
-        demographicsBox.html("");
+        metadataBox.html("");
 
         var searchData = data.filter(data => data.Platform === platformID);
         console.log(searchData)
@@ -60,7 +60,7 @@ function buildDemographics(platformID) {
 
         // Then append the current ID's demographic data to the box
         Object.entries(metadata).forEach(([key, value]) => {
-            demographicsBox.append("p").text(`${key}: ${value}`)
+            metadataBox.append("p").text(`${key}: ${value}`)
         });
     })
 }
@@ -323,7 +323,7 @@ function buildGauge(platformID) {
 
     // Define a function that will switch to the current patientID data
     function optionChanged(platformID) {
-        buildDemographics(platformID);
+        buildMetadata(platformID);
         buildBar(platformID);
         buildPie(platformID);
         buildGauge(platformID);
