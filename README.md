@@ -78,6 +78,7 @@ We designed two webpages:
 ![visualisation page](images/visualisation_page.png)
 
 ### Visual Demonstration
+
 ![visualisation gif](images/visualisation_gif.gif)
 
 ## Conclusion
