@@ -3,11 +3,11 @@
 
 Contributers: 
 
-* Brandon Lee - [ht](https://github.com/JarrodCasey)
-* David Cheung - [ht](https://github.com/tc831)
-* Sarah Casauria - [ht](https://github.com/sarahcasauria)
-* Dhiren Patel - [ht](https://github.com/dhirenkumarp)
-* Maica Tran - [ht](https://github.com/MAICATRAN)
+* Brandon Lee - [https://github.com/JarrodCasey](https://github.com/JarrodCasey)
+* David Cheung - [https://github.com/tc831](https://github.com/tc831)
+* Sarah Casauria - [https://github.com/sarahcasauria](https://github.com/sarahcasauria)
+* Dhiren Patel - [https://github.com/dhirenkumarp](https://github.com/dhirenkumarp)
+* Maica Tran - [https://github.com/MAICATRAN](https://github.com/MAICATRAN)
 
 
 ![video game controllers](images/video_game_img.jpg)
